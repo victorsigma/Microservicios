@@ -1,0 +1,5 @@
+/bike-service/src/main/resources/bootstrap.yaml
+
+/car-service/src/main/resources/bootstrap.yaml
+
+/user-service/src/main/resources/bootstrap.yaml

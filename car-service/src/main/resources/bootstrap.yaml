@@ -5,21 +5,15 @@ spring:
         config:
             enabled: true
             uri: http://localhost:8081
-
-spring:
     jpa:
         database: sqlserver
         show-sql: false
         hibernate:
             ddl-auto: update
-
-spring:
     datasource:
         url: jdbc:sqlserver://localhost;database=microservicios;encrypt=true;trustServerCertificate=true
         username: Sigma
         password: montesgaray
-
-spring:
     webmvc:
         cors:
             allowed-origins: "*"
