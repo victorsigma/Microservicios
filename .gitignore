@@ -5,3 +5,6 @@
 /user-service/src/main/resources
 
 /gateway-service/src/main/resources
+
+
+zipkin-server-2.24.1-exec.jar
