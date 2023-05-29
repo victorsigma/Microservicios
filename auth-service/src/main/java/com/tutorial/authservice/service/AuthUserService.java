@@ -7,6 +7,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.tutorial.authservice.dto.AuthUserDto;
+import com.tutorial.authservice.dto.RequestDto;
 import com.tutorial.authservice.dto.TokenDto;
 import com.tutorial.authservice.entity.AuthUser;
 import com.tutorial.authservice.repository.AuthUserRepository;
@@ -44,8 +45,8 @@ public class AuthUserService {
         return null;
     }
 
-    public TokenDto validate(String token) {
-        if(!jwtProvider.validate(token))
+    public TokenDto validate(String token, RequestDto dto) {
+        if(!jwtProvider.validate(token, dto))
             return null;
         String username = jwtProvider.getUserNameFromToken(token);
         if(!authUserRepository.findByUserName(username).isPresent())
