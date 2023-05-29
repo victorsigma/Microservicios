@@ -21,3 +21,5 @@ spring:
             allowed-origins: "*"
             allowed-methods: "GET, POST, PUT, DELETE"
             allowed-headers: "Content-Type, Authorization"
+jwt:
+    secret: secret
