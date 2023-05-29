@@ -16,6 +16,11 @@ spring:
         hibernate:
             ddl-auto: update
 
+    datasource:
+        url: jdbc:sqlserver://localhost;database=microservicios;encrypt=true;trustServerCertificate=true
+        username: ${DB_USER}
+        password: ${DB_PASS}
+
     webmvc:
         cors:
             allowed-origins: "*"
