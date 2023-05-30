@@ -15,7 +15,8 @@ spring:
             ddl-auto: update
 
     datasource:
-        url: jdbc:sqlserver://localhost;database=microservicios;encrypt=true;trustServerCertificate=true
+        # url: jdbc:sqlserver://localhost;database=microservicios;encrypt=true;trustServerCertificate=true
+        url: jdbc:mysql://localhost:3306/microservicios
         username: ${DB_USER}
         password: ${DB_PASS}
 
